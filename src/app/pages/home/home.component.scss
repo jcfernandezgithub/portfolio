@@ -1,0 +1,51 @@
+/*Imports*/
+@import '../../../sass/variables';
+
+/*Navigation*/
+#first-nav{
+  strong{
+    text-transform: uppercase;
+    em{
+      color: $default-green;
+    }
+  }
+  #inline{
+    li a{
+      color: black;
+    }
+  }
+}
+
+#second-nav{
+  background-color: #000000;
+  text-transform: uppercase;
+  height: 70px;
+  .home{
+    color: $default-green;
+  }
+
+  @media(max-width:575px){
+    display: none;
+  }
+}
+
+/*Banner*/
+.banner{
+  .img-thumbnail{
+    border-radius: 100%;
+    width:200px;
+    height: 210px;
+  }
+
+  #card{
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    @media(max-width:780px){
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
