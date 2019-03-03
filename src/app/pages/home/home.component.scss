@@ -2,55 +2,56 @@
 @import '../../../sass/variables';
 
 /*Navigation*/
-#first-nav{
-  strong{
+#first-nav {
+  strong {
     text-transform: uppercase;
-    em{
+
+    em {
       color: $default-green;
     }
   }
-  #inline{
-    li a{
+
+  #inline {
+    li a {
       color: black;
     }
   }
 }
 
-#second-nav{
+#second-nav {
   background-color: #000000;
   text-transform: uppercase;
   height: 70px;
-  .home{
+
+  .home {
     color: $default-green;
   }
-
-  @media(max-width:575px){
+  @media(max-width:575px) {
     display: none;
   }
 }
 
 /*Banner*/
-.banner{
-  .img-thumbnail{
+.banner {
+  .img-thumbnail {
     border-radius: 100%;
-    width:200px;
+    width: 200px;
     height: 210px;
   }
 
-  #card{
+  #card {
     display: flex;
     align-items: center;
     align-content: center;
-
-    @media(max-width:780px){
+    @media(max-width:780px) {
       display: block;
       text-align: center;
     }
   }
 }
 
-.workflow{
-  .bubble{
+.workflow {
+  .bubble {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,13 +60,21 @@
     border: solid 3px $default-green;
     width: 175px;
     height: 175px;
-    strong{
+
+    strong {
       color: $default-green;
     }
   }
-  .bubble-title{
+
+  .bubble-title {
     color: $default-green;
     text-transform: uppercase;
     font-weight: bold;
   }
+}
+
+footer {
+  background-color: black;
+  color: #ffffff;
+
 }
