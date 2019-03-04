@@ -17,8 +17,22 @@ a{
   }
 
   #inline {
+    .blocked{
+      display: none;
+    }
     li a {
       color: black;
+    }
+  }
+
+  @media(max-width:575px) {
+    #inline{
+      .github{
+        display: none;
+      }
+      .blocked{
+        display: block;
+      }
     }
   }
 }
@@ -34,6 +48,7 @@ a{
   .home {
     color: $default-green;
   }
+
   @media(max-width:575px) {
     display: none;
   }
