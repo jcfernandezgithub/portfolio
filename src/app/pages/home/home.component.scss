@@ -38,9 +38,59 @@ a{
     display: none;
   }
 }
+.solutions {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  background-color: #424242;
+
+  .container {
+    padding-top: 350px;
+    padding-bottom: 350px;
+
+    h1 {
+      font-size: 4rem;
+      text-transform: uppercase;
+      color: #ffffff;
+
+      strong {
+        color: $default-green;
+      }
+    }
+
+    h2 {
+      color: #ffffff;
+      font-size: 2vw;
+    }
+
+    @media(max-width:575px){
+      padding-top:75px;
+      padding-bottom:75px;
+      h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: #ffffff;
+
+        strong {
+          color: $default-green;
+        }
+      }
+
+      h2 {
+        color: #ffffff;
+        border: 0.5 black;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+
 
 /*Banner*/
 .banner {
+  padding-top: 75px;
+  padding-bottom: 75px;
   .img-thumbnail {
     border-radius: 100%;
     width: 190px;
