@@ -2,7 +2,7 @@
 @import '../../../sass/variables';
 
 //Generals
-a{
+a {
   color: $default-green;
 }
 
@@ -17,20 +17,21 @@ a{
   }
 
   #inline {
-    .blocked{
+    .blocked {
       display: none;
     }
+
     li a {
       color: black;
     }
   }
-
   @media(max-width:575px) {
-    #inline{
-      .github{
+    #inline {
+      .github {
         display: none;
       }
-      .blocked{
+
+      .blocked {
         display: block;
       }
     }
@@ -53,6 +54,7 @@ a{
     display: none;
   }
 }
+
 .solutions {
   display: flex;
   align-items: center;
@@ -77,10 +79,10 @@ a{
       color: #ffffff;
       font-size: 2vw;
     }
-
-    @media(max-width:575px){
-      padding-top:75px;
+    @media(max-width:575px) {
+      padding-top: 75px;
       padding-bottom: 75px;
+
       h1 {
         font-size: 2rem;
         text-transform: uppercase;
@@ -93,7 +95,7 @@ a{
 
       h2 {
         color: #ffffff;
-        border: 0.5 black;
+        border: .5 black;
         font-size: 1.2rem;
       }
     }
@@ -122,26 +124,61 @@ a{
   }
 }
 
-.clippy {
-  clip-path: polygon(0 65%, 100% 30%, 100% 100%, 0% 100%);
+.services {
+  .custom-card {
+    background-color: #27b4a8;
+
+    .custom-card-header {
+      height: 70px;
+      color: #ffffff;
+      background-color: #23a297;
+    }
+
+    .angular-icon {
+      color: white;
+    }
+
+    .mobile-icon {
+      color: white;
+      font-size: 40px;
+    }
+
+    .web-icon {
+      font-size: 40px;
+    }
+
+    .custom-card-content {
+      color: white;
+    }
+
+    &:hover{
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      bottom: 7px;
+    }
+  }
+}
+
+/*.clippy {
+  clip-path: polygon(0 70%, 100% 20%, 100% 100%, 0% 100%);
   background-color: $default-green;
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: -1;
-
-  @media(max-width: 1500px){
-    display:none;
+  @media(max-width: 1500px) {
+    display: none;
   }
-}
+}*/
 
 /*workflow section*/
 .workflow {
-  background-color:$default-green;
-  h1{
+  background-color: $default-green;
+
+  h1 {
     color: #ffffff;
   }
-  p{
+
+  p {
     color: #ffffff;
   }
 
@@ -151,7 +188,7 @@ a{
     justify-content: center;
     text-align: center;
     border-radius: 100%;
-    border: solid 3px #ffffff;
+    border: solid 2px #ffffff;
     width: 175px;
     height: 175px;
 
@@ -167,7 +204,7 @@ a{
     font-weight: bold;
   }
 
-  #last-bubble{
+  #last-bubble {
     padding-bottom: 150px;
   }
 }
@@ -176,13 +213,14 @@ a{
 footer {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color:#424242;
+  background-color: #424242;
   color: $light-grey;
 
-  ul{
+  ul {
     padding-left: 0;
     list-style: none;
-    li{
+
+    li {
       text-align: left;
     }
   }
@@ -191,17 +229,17 @@ footer {
     height: 1px;
     background-color: $light-grey;
   }
-
-  @media(max-width: 780px){
+  @media(max-width: 780px) {
     padding-top: 0;
     padding-bottom: 0;
     background-color: #424242;
     color: $light-grey;
 
-    ul{
+    ul {
       padding-left: 0;
       list-style: none;
-      li{
+
+      li {
         text-align: left;
       }
     }
