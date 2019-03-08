@@ -1,60 +1,6 @@
 /*Imports*/
 @import '../../../sass/variables';
 
-//Generals
-a {
-  color: $default-green;
-}
-
-/*Navigation*/
-#first-nav {
-  strong {
-    text-transform: uppercase;
-
-    em {
-      color: $default-green;
-    }
-  }
-
-  #inline {
-    .blocked {
-      display: none;
-    }
-
-    li a {
-      color: black;
-    }
-  }
-  @media(max-width:575px) {
-    #inline {
-      .github {
-        display: none;
-      }
-
-      .blocked {
-        display: block;
-      }
-    }
-  }
-}
-
-#second-nav {
-  background-color: #000000;
-  text-transform: uppercase;
-  height: 70px;
-  opacity: .75;
-  filter: alpha(opacity=50);
-  /* For IE8 and earlier */
-
-  .home {
-    color: $default-green;
-  }
-
-  @media(max-width:575px) {
-    display: none;
-  }
-}
-
 .solutions {
   display: flex;
   align-items: center;
@@ -117,14 +63,12 @@ a {
     display: flex;
     align-items: center;
     align-content: center;
-
     @media(max-width:900px) {
       display: block;
       text-align: center;
     }
   }
-
-  @media(max-width:900px){
+  @media(max-width:900px) {
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -157,8 +101,10 @@ a {
       color: white;
     }
 
-    &:hover{
+    &:hover {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      filter: grayscale(35%);
+      position: relative;
       bottom: 7px;
     }
   }
@@ -212,48 +158,5 @@ a {
 
   #last-bubble {
     padding-bottom: 150px;
-  }
-}
-
-/*footer*/
-footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: #424242;
-  color: $light-grey;
-
-  ul {
-    padding-left: 0;
-    list-style: none;
-
-    li {
-      text-align: left;
-    }
-  }
-
-  .line {
-    height: 1px;
-    background-color: $light-grey;
-  }
-  @media(max-width: 780px) {
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: #424242;
-    color: $light-grey;
-
-    ul {
-      padding-left: 0;
-      list-style: none;
-
-      li {
-        text-align: left;
-      }
-    }
-
-    .line {
-      height: 1px;
-      background-color: $light-grey;
-      margin-bottom: 0;
-    }
   }
 }

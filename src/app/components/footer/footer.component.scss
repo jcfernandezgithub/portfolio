@@ -1,0 +1,50 @@
+/*Imports*/
+@import '../../../sass/variables';
+
+//Generals
+a {
+  color: $default-green;
+}
+
+/*footer*/
+footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #424242;
+  color: $light-grey;
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+
+    li {
+      text-align: left;
+    }
+  }
+
+  .line {
+    height: 1px;
+    background-color: $light-grey;
+  }
+  @media(max-width: 780px) {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #424242;
+    color: $light-grey;
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+
+      li {
+        text-align: left;
+      }
+    }
+
+    .line {
+      height: 1px;
+      background-color: $light-grey;
+      margin-bottom: 0;
+    }
+  }
+}

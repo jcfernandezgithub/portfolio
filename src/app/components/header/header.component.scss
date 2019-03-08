@@ -1,0 +1,52 @@
+/*Imports*/
+@import '../../../sass/variables';
+
+/*Navigation*/
+#first-nav {
+  strong {
+    text-transform: uppercase;
+
+    em {
+      color: $default-green;
+    }
+  }
+
+  #inline {
+    .blocked {
+      display: none;
+    }
+
+    li a {
+      color: black;
+    }
+  }
+  @media(max-width:575px) {
+    #inline {
+      .github {
+        display: none;
+      }
+
+      .blocked {
+        display: block;
+      }
+    }
+  }
+}
+
+#second-nav {
+  background-color: #000000;
+  text-transform: uppercase;
+  height: 70px;
+  opacity: .75;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
+
+  .home {
+    color: $default-green;
+  }
+
+  @media(max-width:575px) {
+    display: none;
+  }
+}
+
