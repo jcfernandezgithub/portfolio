@@ -49,10 +49,20 @@
 }
 /*Personal card*/
 .personal {
+  margin-top: 180px;
+  margin-bottom: 180px;
+  animation: fadein 2s;
+
   .personal-card {
     display: inline-flex;
 
     .personal-thumbnail {
+      .personal-title {
+        display: block;
+        color: $default-green;
+        font-size: 24px;
+      }
+
       .thumbnail {
         border: solid 2px $default-green;
         border-radius: 100%;
@@ -89,17 +99,37 @@
       }
     }
   }
+  @media (min-width:1400px) {
+    margin-top: 310px;
+    margin-bottom: 350px;
+  }
   @media(max-width: 769px) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .personal-title {
+      margin: auto;
+    }
+
     .personal-card {
       display: block;
       text-align: center;
     }
   }
+  @keyframes fadein {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+
+    to {
+      left: 100px;
+      transform: translateX(0);
+    }
+  }
 }
 
 .services {
-  margin-top: 100px;
-
   .custom-card {
     background-color: #27b4a8;
 
