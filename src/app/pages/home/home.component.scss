@@ -49,8 +49,8 @@
 }
 /*Personal card*/
 .personal {
-  padding-top: 215px;
-  padding-bottom: 215px;
+  padding-top: 180px;
+  padding-bottom: 180px;
   animation: fadein 1s;
 
   .personal-card {
@@ -96,10 +96,31 @@
       }
     }
   }
-  @media (min-width:1400px) {
-    padding-top: 310px;
-    padding-bottom: 350px;
+
+  .goodat {
+    color: $default-green;
   }
+
+  .value-card {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    h5 {
+      color: $default-green;
+    }
+
+    p {
+      display: none;
+    }
+
+    &:hover {
+      p {
+        display: block;
+        animation: showin 2s;
+      }
+    }
+  }
+
   @media(max-width: 769px) {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -113,6 +134,7 @@
       text-align: center;
     }
   }
+
   @keyframes fadein {
     from {
       opacity: 0;
@@ -124,10 +146,20 @@
       transform: translateX(0);
     }
   }
+  @keyframes showin {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
 }
 
 .services {
   padding-top: 70px;
+
   .custom-card {
     background-color: #27b4a8;
 
@@ -161,8 +193,8 @@
       bottom: 7px;
     }
   }
-  @media(max-width: 700px){
-    padding-top:0;
+  @media(max-width: 700px) {
+    padding-top: 0;
   }
 }
 
