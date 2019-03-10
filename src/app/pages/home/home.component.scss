@@ -47,6 +47,7 @@
     }
   }
 }
+
 /*Personal card*/
 .personal {
   padding-top: 180px;
@@ -83,6 +84,7 @@
       }
 
       .description {
+        font-size: 18px;
         margin-bottom: 0;
       }
 
@@ -117,11 +119,10 @@
     &:hover {
       p {
         display: block;
-        animation: showin 2s;
+        animation: showin 1s;
       }
     }
   }
-
   @media(max-width: 769px) {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -133,14 +134,26 @@
     .personal-card {
       display: block;
       text-align: center;
+
+      .card-text {
+        .description {
+          font-size: 22px;
+        }
+      }
     }
   }
-
-  @media(min-width: 1400px){
+  @media(min-width: 1400px) {
     padding-top: 300px;
     padding-bottom: 300px;
-  }
 
+    .personal-card {
+      .card-text {
+        .description {
+          font-size: 24px;
+        }
+      }
+    }
+  }
   @keyframes fadein {
     from {
       opacity: 0;
@@ -167,6 +180,7 @@
   padding-top: 70px;
 
   .custom-card {
+    height: 100%;
     background-color: #27b4a8;
 
     .custom-card-header {
