@@ -1,8 +1,8 @@
 /*Imports*/
 @import '../sass/variables';
-
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 .page {
-
+  font-family: 'Raleway', sans-serif;
   //Generals
   a {
     color: $default-green;
